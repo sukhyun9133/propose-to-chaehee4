@@ -75,7 +75,7 @@ function App() {
           {current.type === "intro" && (
             <div>
               {current.content.map((line, i) => (
-                <p key={i} className="text-xl mb-2">{line}</p>
+                <p key={i} className="text-xl font-bold mb-2">{line}</p>
               ))}
               <button onClick={nextPage} className="mt-6 bg-pink-500 text-white px-6 py-2 rounded-full">
                 시작하기 💌
@@ -85,7 +85,7 @@ function App() {
 
           {current.question && (
             <div>
-              <p className="text-xl font-bold mb-6 whitespace-pre-wrap">{current.question}</p>
+              <p className="text-xl font-bold font-bold mb-6 whitespace-pre-wrap">{current.question}</p>
               <div className="flex gap-4 justify-center">
                 <button onClick={nextPage} className="bg-green-400 px-5 py-2 rounded-full text-white">좋아</button>
                 <button onClick={nextPage} className="bg-red-400 px-5 py-2 rounded-full text-white">아니</button>
@@ -96,7 +96,7 @@ function App() {
           {current.type === "confess" && (
             <div>
               {current.content.map((line, i) => (
-                <p key={i} className="text-xl mb-2">{line}</p>
+                <p key={i} className="text-xl font-bold mb-2">{line}</p>
               ))}
               <div className="flex gap-4 justify-center mt-6">
                 <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">좋아</button>
@@ -108,7 +108,7 @@ function App() {
           {current.type === "rejection" && (
             <div>
               {current.content.map((line, i) => (
-                <p key={i} className="text-xl mb-2">{line}</p>
+                <p key={i} className="text-xl font-bold mb-2">{line}</p>
               ))}
               <div className="flex gap-4 justify-center mt-6">
                 <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">좋아</button>
@@ -120,7 +120,7 @@ function App() {
           {current.type === "ending" && (
             <div>
               {current.content.map((line, i) => (
-                <p key={i} className="text-lg mb-2">{line}</p>
+                <p key={i} className="text-lg font-bold mb-2">{line}</p>
               ))}
               <button onClick={() => goToPage(0)} className="mt-6 bg-purple-500 text-white px-6 py-2 rounded-full">
                 다시 보기 🔁
