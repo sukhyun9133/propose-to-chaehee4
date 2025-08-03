@@ -87,8 +87,8 @@ function App() {
             <div>
               <p className="text-xl font-semibold mb-6 whitespace-pre-wrap">{current.question}</p>
               <div className="flex gap-4 justify-center">
-                <button onClick={nextPage} className="bg-green-400 px-5 py-2 rounded-full text-white">예</button>
-                <button onClick={nextPage} className="bg-red-400 px-5 py-2 rounded-full text-white">아니오</button>
+                <button onClick={nextPage} className="bg-green-400 px-5 py-2 rounded-full text-white">좋아</button>
+                <button onClick={nextPage} className="bg-red-400 px-5 py-2 rounded-full text-white">아니</button>
               </div>
             </div>
           )}
@@ -99,8 +99,8 @@ function App() {
                 <p key={i} className="text-xl mb-2">{line}</p>
               ))}
               <div className="flex gap-4 justify-center mt-6">
-                <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">예</button>
-                <button onClick={() => goToPage(10)} className="bg-red-400 px-5 py-2 rounded-full text-white">아니오</button>
+                <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">좋아</button>
+                <button onClick={() => goToPage(10)} className="bg-red-400 px-5 py-2 rounded-full text-white">아니</button>
               </div>
             </div>
           )}
@@ -111,8 +111,8 @@ function App() {
                 <p key={i} className="text-xl mb-2">{line}</p>
               ))}
               <div className="flex gap-4 justify-center mt-6">
-                <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">예</button>
-                <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">예</button>
+                <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">좋아</button>
+                <button onClick={() => goToPage(11)} className="bg-green-400 px-5 py-2 rounded-full text-white">좋아</button>
               </div>
             </div>
           )}
